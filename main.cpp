@@ -2,7 +2,7 @@
 #include<iostream>
 #include<fstream>
 #include<stdlib.h>
-#include<conio.h>
+
 
 //This is a macro
 #define Numberofcolumns 4  // because the number of columns are fixed in AES which is 4
@@ -230,7 +230,7 @@ void CipherText()
 int main()
 {
 	int i;
-	//clrscr(); // clear the screen
+	// clear the screen
 	while(Numberofrounds!=128 && Numberofrounds!=192 && Numberofrounds!=256)
 	{
 		Numberofrounds=128; // for AES 128 bit encrytion
@@ -269,5 +269,4 @@ int main()
 
 	printf("\n\n"); // prints the next line
 
-	getch(); //holds the screen until any key is pressed
 }
